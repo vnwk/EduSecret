@@ -1,0 +1,119 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #496c49;
+  padding: 10px;
+}
+
+header button, .dropdown-parent span {
+  background-color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+header button:hover, .dropdown-parent span:hover {
+  background-color: #ddd;
+}
+
+/* Dropdown */
+#markschemesDropdown {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#markschemesDropdown a {
+  text-decoration: none;
+  color: #333;
+  margin: 3px 0;
+}
+
+/* Sections */
+section {
+  margin: 20px auto;
+}
+
+/* Grid for games */
+.grid-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.paper {
+  background-color: #83b683;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 150px;
+}
+
+.paper:hover {
+  background-color: #496c49;
+}
+
+/* Game Viewer */
+#gameViewer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#gameViewer iframe {
+  border-radius: 14px;
+  border: 2px solid #83b683;
+  box-shadow: 0 15px 40px rgba(131, 182, 131, 0.5);
+  max-width: 100%;
+  height: 600px;
+}
+
+/* Fullscreen Button */
+#fullscreenBtn {
+  display: inline-block;
+  margin: 10px 0 1rem 0;
+  background-color: #496c49;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#fullscreenBtn:hover {
+  background-color: #3b583b;
+}
+
+/* Loader & hidden */
+#loader {
+  font-weight: 700;
+  color: #496c49;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}

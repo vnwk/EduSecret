@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduVault Revision</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <button id="homeBtn">Home</button>
+    <button id="pastPapersBtn">Past Papers</button>
+    <button id="resourcesBtn">Resources</button>
+    <div class="dropdown-parent">
+      <span>Markschemes ▼</span>
+      <div id="markschemesDropdown" class="hidden">
+        <a href="markscheme1.pdf" target="_blank">Markscheme 1</a>
+        <a href="markscheme2.pdf" target="_blank">Markscheme 2</a>
+        <a href="markscheme3.pdf" target="_blank">Markscheme 3</a>
+      </div>
+    </div>
+    <button id="loginToggle">Login</button>
+  </header>
+
+  <!-- Home Section -->
+  <section id="homeSection">
+    <h1>Welcome to EduVault Revision</h1>
+    <button id="startBtn">Start Revision</button>
+  </section>
+
+  <!-- Login Screen -->
+  <section id="loginScreen" class="hidden">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button id="loginBtn">Login</button>
+    <p id="loginError" class="error"></p>
+    <button id="backHomeBtn">← Back</button>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resourcesList" class="hidden">
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="resource1.pdf" target="_blank">Resource 1</a></li>
+      <li><a href="resource2.pdf" target="_blank">Resource 2</a></li>
+      <li><a href="resource3.pdf" target="_blank">Resource 3</a></li>
+    </ul>
+  </section>
+
+  <!-- Past Papers / Games Section -->
+  <section id="paperGrid" class="hidden">
+    <h2>Past Papers</h2>
+    <div id="gamesContainer" class="grid-items"></div>
+  </section>
+
+  <!-- Game Viewer Section -->
+  <section id="gameViewer" class="hidden">
+    <button class="back-btn" onclick="goBack()">← Back to Past Papers</button>
+    <button id="fullscreenBtn" style="display:none;">Fullscreen</button>
+    <div id="loader">Loading, please wait...</div>
+    <iframe
+      id="gameFrame"
+      src=""
+      width="800"
+      height="600"
+      scrolling="none"
+      frameborder="0"
+      allowfullscreen
+      style="display:none"
+    ></iframe>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
